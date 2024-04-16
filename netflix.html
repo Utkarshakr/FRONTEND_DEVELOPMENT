@@ -2,6 +2,37 @@
 <html lang="en">
 <head>
     <style>
+        #header{
+            width: 100%;
+            height: 70px;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #title{
+            /* background-color: green; */
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #navitems{
+            /* background-color: brown; */
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h2{
+            margin: 0;
+        }
+        a{
+            color: cornsilk;
+            text-decoration: none;
+            margin-right: 50px;    
+        }
         body{
             margin: 0;
             max-width: 0;
@@ -34,6 +65,11 @@
         .main{
             height: 80%;
             /* background-color: blueviolet; */
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
         }
         button{
             background-color: red;
@@ -45,9 +81,39 @@
             border-radius: 5px;
             margin-right: 20px;
         }
+        h1{
+            font-size: 55px;
+            margin: 0;
+        }
+        p{
+            margin: 13px;
+        }
+        #subtitle1{
+            font-size: 28px;
+        }
+        #subtitle2{
+            font-size: 23px;
+        }
     </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
+    <div id="header"> 
+
+        <div id="title">
+            <h2>My Portfolio</h2>
+        </div>
+
+        <div id="navitems">
+            <a href="portfolio.html">Portfolio</a>
+            <a href="netflix.html">Netflix</a>
+            <a href="card.html">Profile</a>
+            <a href="resume">Resume</a>
+
+        </div>
+
+    </div>
+
     <div id="shadow">
             <div class="header">
                 <div id="logo">
@@ -55,11 +121,18 @@
                     width="150" height="50"/>
                 </div>
                 <div id="buttons">
-                   <button>Sign In</button> 
-                   <button>Sign Up</button>
+                   <button><i class="bi bi-facebook"></i> Sign In</button> 
+                   <button><i class="bi bi-key"></i>Sign Up</button>
                 </div>
             </div>
-            <div class="main"></div>
+            <div class="main">
+                <h1>Unlimited Movies , TV shows and more.</h1>
+                <p id="subtitl1">Watch anywhere, Cancel anytime.</p>
+                
+                <p id="subtitle2">
+                    Ready to watch? Enter yout email to create or restart your membership.
+                </p>
+            </div>
     </div>
 </body>
 </html>
