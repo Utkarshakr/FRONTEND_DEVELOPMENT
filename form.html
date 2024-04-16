@@ -14,6 +14,112 @@
 </head>
 <body>
     <div class="container">
+        <h2>Input Type="reset</h2>
+        <form action="" method="" onsubmit="">
+            <input type="text" />
+            <input type="password" />
+            <input type="reset" />
+            <input type="submit" />
+        </form>
+    </div>
+    <div class="container">
+        <h2>Attribute: Maxlength, size, required, disabled, readonly, reset ,  </h2>
+        <form>
+            OTP:
+            <input type="text" maxlength="4" size="3" required minlength="2"/>
+            <button>Submit</button>
+        </form>
+    </div>
+    <div style="text-align: center;" class="">
+        <h2>TextArea Element</h2>
+        
+        <textarea rows="10" cols="50"></textarea>
+    </div>
+    <div class="container">
+        <h2>select element</h2>
+        <form>
+            <select>
+
+               <optgroup label="Programming Language">
+               <option>Java</option>
+               <option>Javascript</option>
+               <option>CSS</option>
+                </optgroup>
+
+                <optgroup label="Framework">
+                    <option>Springboot</option>
+                    <option>Django</option>
+                    <option>Asp.net MVC</option>
+                    <option>Angular</option>
+                </optgroup>
+
+                <optgroup label="Libraries">
+                    <option>React JS</option>
+                    <option>Jquery</option>
+                    <option>Bootstrap</option>
+                </optgroup>
+
+            </select>
+        </form>
+    </div>
+
+    <div class="container">
+        <h2>select element</h2>
+        <form>
+            <select>
+                <option>Banglore</option>
+                <option>Patna</option>
+                <option>Mumbai</option>
+                <option>Kolkata</option>
+            </select>
+        </form>
+    </div>
+
+    <div class="container">
+        <input list="myList"/>
+
+        <datalist id="myList">
+            <option value="Sagar"></option>
+            <option value="Sachin"></option>
+            <option value="Sid"></option>
+            <option value="Sneha"></option>
+            <option value="Seema"></option>
+        </datalist>
+    </div>
+
+    <div class="container">
+        <h2>Input Type="checkbox"</h2>
+        <form>
+            <input type="checkbox" name="html"/>HTML
+            <input type="checkbox" name="css"/>CSS
+            <input type="checkbox" name="js"/>JS
+        </form>
+    </div>
+
+    <div class="container">
+        <h2>Input Type="radio"</h2>
+        <form>
+            <input type="radio" name="gender"/>Male
+            <input type="radio" name="gender"/>Female
+            <input type="radio" name="gender"/>Other
+        </form>
+    </div>
+
+    <div class="container">
+        <h2>Input Type="time"</h2>
+        <form>
+            <input type="time" />
+        </form>
+    </div>
+
+    <div class="container">
+        <h2>Input Type="date"</h2>
+        <form>
+            <input type="date" />
+        </form>
+    </div>
+
+    <div class="container">
         <h2>Input Type="text"</h2>
         <form>
             <input type="text" placeholder="Enter Name" value="Hello" />
@@ -33,6 +139,28 @@
         <form>
             <input type="button" value="Login"/>
             <input type="button" value="Register"/>
+        </form>
+    </div>
+
+    <div class="container">
+        <h2>Input Type="email"</h2>
+        <form>
+            <input type="email" placeholder="Enter Email Id"/>
+            <input type="button" value="Submit"/>
+        </form>
+    </div>
+
+    <div class="container">
+        <h2>Input Type="number"</h2>
+        <form>
+            <input type="number" value="Enter Phone No."/>
+        </form>
+    </div>
+
+    <div class="container">
+        <h2>Input Type="color"</h2>
+        <form>
+            <input type="color" />
         </form>
     </div>
 </body>
