@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            margin: 0;
+        }
+        html{
+            border: 5px solid red;
+            height: 100vh;
+            position: relative;
+        }
+        body{
+            border: 4px solid black;
+            margin: 30px;
+            height: 500px;
+            position: relative;
+        }
+        .maincontainer{
+            border: 3px solid green;
+            margin: 30px;
+            height: 400px;
+            position: relative;
+           
+        }
+        .sub1container{
+            border: 3px solid rgb(17, 0, 128);
+            margin: 30px;
+            height: 300px;
+            position: relative;
+        }
+        .sub2container{
+            border: 3px solid rgb(128, 0, 21);
+            margin: 30px;
+            height: 200px;
+            position: relative;
+        }
+        /* img{
+            position: absolute;
+            top: 30px;
+            left: 30px;
+        } */
+        #img1{
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            z-index: 1;
+        }
+        #img2{
+            position: absolute;
+            left: 50px;
+            top: 10px;
+            z-index: 3;
+        }
+        #img3{
+            position: absolute;
+            left: 100px;
+            top: 10px;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <div class="maincontainer">
+        <div class="sub1container">
+            <div class="subcontainer">
+                <img
+                id="img1"
+                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJynBoYvt0WSXptEyDzx4d6n77kNX88fs-mw&s" width="120" height="120" />
+                <img
+                id="img2"
+                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnRWI3lX3z1xPbRKWseNoMK1V5fdJpNDnV_w&s" width="120" height="120" />
+                 <img
+                id="img3"
+                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7njt91TOzwjrf0dCeFfhoHWC86NXwDIYDlg&s" width="120" height="120" />
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8">
+    
+    <title>Document</title>
+    <style>
+        div{
+            text-align: center;
+            margin-top: 50px;
+        }
+        button{
+            margin-right: 30px;
+        }
+    </style>
+    <script>
+       function changeImageToAngular(){
+        var imageRef = document.getElementById("image");
+        imageRef.src = "https://www.freecodecamp.org/news/content/images/2020/04/Copy-of-Copy-of-Travel-Photography.png";
+       }
+       function changeImageToReact(){
+        var imageRef = document.getElementById("image");
+        imageRef.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbK9rgnGJJyFgGfXschzVRMqYYSCnzIVufxv1RqkNiBw&s";
+       }
+    </script>
+</head>
+<body>
+    <div>
+        <input type="password"/><br/> <br/>
+        <img 
+        id="image"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbK9rgnGJJyFgGfXschzVRMqYYSCnzIVufxv1RqkNiBw&s" width="300" height="300" />
+        <br/> <br/>
+
+        <button onclick="changeImageToReact()">React</button>
+        <button onclick="changeImageToAngular()">Angular</button>
+    </div>
+</body>
+</html>

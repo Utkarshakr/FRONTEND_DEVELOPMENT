@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js"></script>
+    <script src="home.js"></script>
+    <script>
+        function changeh2content(){
+            // Step 1 : Get the referance or access of HTML Element(DOM Node)
+            var h2ref = document.getElementById("title");
+            var pref = document.getElementById("content");
+            // Step 2 : Change the content of h2
+            h2ref.innerText = "DOM Manipulated Using Javascript";
+            pref.innerText = "Paragraph Manipulated Using JavaScript";
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <h2 id="title"> DOM Concept</h2>
+        <p id="content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit maxime aperiam recusandae perferendis repellat possimus accusantium numquam consectetur delectus. Itaque dignissimos laudantium voluptatibus praesentium, quasi doloribus nemo molestias pariatur exercitationem.
+            Totam corrupti unde error itaque commodi ipsam deserunt temporibus, et placeat incidunt iure, quos illum in cumque vel voluptatibus fuga nemo maiores enim mollitia doloribus impedit perspiciatis. Aspernatur, quis laboriosam?
+            Maxime, sequi voluptates explicabo quae eaque sed ratione soluta asperiores cupiditate magni nam non dicta id? Alias, mollitia aliquam. Nobis expedita voluptas cum, vero tempora repellendus delectus molestiae sint tenetur?
+            Pariatur laudantium ipsum harum saepe. Iste eligendi, nostrum repellendus ex praesentium totam, delectus laboriosam, impedit ut omnis magni reiciendis neque ab. Quidem aut facilis voluptate enim, repellendus est? Laboriosam, odit!
+        </p>
+        <button onclick="changeh2content()">Change H2 Content</button>
+    </div>
+</body>
+<script></script>
+
+</html>
